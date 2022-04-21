@@ -1,4 +1,4 @@
-name: Create Trello card on opened issues
+name: Create Trello card on pull request merged
 
 on:
   pull_request:
