@@ -1,0 +1,21 @@
+name: generate-trello-card
+
+on:
+  push:
+    branches: [main]
+  
+  workflow_dispatch:
+
+
+jobs:
+  hello_world_job:
+    run-on: ubuntu-latest
+    name: A job to create a hello world card
+    steps: 
+      - uses: actions/checkout@v3
+      
+      - name: Create trello card demo
+        uses: jessicazu/trello-github-actions@v1.0
+        with:
+          trello-action: create_card_when_issue_opened
+        
