@@ -1,8 +1,8 @@
 name: Create Trello card on opened issues
 
 on:
-  issues:
-    types: [opened]
+  pull_request:
+    types: [closed]
 
 jobs:
   create_trello_card_job:
@@ -10,9 +10,9 @@ jobs:
     name: Create Trello Card
     steps:
       - name: Call trello-github-actions
-        uses: LiangRenDev/github-action-trello-integration@v1.1.2
+        uses: LiangRenDev/github-action-trello-integration@v1.2.0
         with:
-          action: issue_opened_create_card
+          action: pull_request_merge_create_card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
