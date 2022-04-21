@@ -1,3 +1,3 @@
 # trigger-trello
 
-Create a workflow and action to generate trello card
+Create a workflow to generate trello card
