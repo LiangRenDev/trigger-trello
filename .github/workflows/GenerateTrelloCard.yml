@@ -13,7 +13,7 @@ jobs:
         uses: LiangRenDev/github-action-trello-integration@main
         with:
           action: pull_request_merge_create_card
-          releaseVersion: 2022.04.22.97-master
+          release_version: 2022.04.22.97-master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
