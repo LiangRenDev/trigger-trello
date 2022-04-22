@@ -13,7 +13,7 @@ jobs:
         uses: LiangRenDev/github-action-trello-integration@main
         with:
           action: pull_request_merge_create_card
-          release_version: 'OctopusTrello #0.1.19'
+          release_version: 'OctopusTrello #2022.4.22.001'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
