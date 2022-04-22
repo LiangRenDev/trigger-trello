@@ -10,10 +10,10 @@ jobs:
     name: Create Trello Card
     steps:
       - name: Call trello-github-actions
-        uses: LiangRenDev/github-action-trello-integration@main
+        uses: LiangRenDev/github-action-trello-integration@8b39d65c5502f36dd3d45973ab532d9204976f8d
         with:
           action: pull_request_merge_create_card
-          release_version: 
+          release_version: 'OctopusTrello #0.0.19'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
