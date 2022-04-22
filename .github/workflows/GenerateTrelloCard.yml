@@ -10,7 +10,7 @@ jobs:
     name: Create Trello Card
     steps:
       - name: Call trello-github-actions
-        uses: LiangRenDev/github-action-trello-integration@v1.2.1
+        uses: LiangRenDev/github-action-trello-integration@main
         with:
           action: pull_request_merge_create_card
           release_version: 'OctopusTrello #0.0.19'
